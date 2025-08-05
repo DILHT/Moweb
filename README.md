@@ -29,30 +29,18 @@ Moweb is a sleek, responsive React web application that allows users to browse p
 git clone https://github.com/your-username/moweb-movie-app.git
 cd moweb-movie-app
 2. Install dependencies
-bash
-Copy
-Edit
 npm install
 3. Set up your TMDB API Key
 Create a .env file in the root directory and add the following:
-
-ini
-Copy
-Edit
 VITE_TMDB_MOVIE_TOKEN=your_tmdb_api_token_here
 You can get your token from: https://www.themoviedb.org/settings/api
 
 4. Run the development server
-bash
-Copy
-Edit
 npm run dev
 Open http://localhost:5173 to view the app in the browser.
 
 📁 Project Structure
-bash
-Copy
-Edit
+
 src/
 ├── components/
 │   ├── NavigationBar.jsx
@@ -62,7 +50,8 @@ src/
 │   └── menu.js
 ├── App.jsx
 ├── main.jsx
-🌈 Features
+```
+### 🌈 Features
 🔍 Live Search – Search through popular movies instantly
 
 🎨 Stylish UI – Custom theme using Tailwind and neon-accent colors
@@ -73,17 +62,17 @@ src/
 
 🧩 Reusable Components – Clean, modular component structure
 
-📸 Screenshots
-Coming soon...
+## 📸 Screenshots
+   ![alt text](image.png)
 
-🙌 Acknowledgments
-TMDB API
+## 🙌 Acknowledgments
+    TMDB API
 
-React Icons
+    React Icons
 
-Tailwind CSS
+    Tailwind CSS
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License.
 
 ## 🤝 Contributing
