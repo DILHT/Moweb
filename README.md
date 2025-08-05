@@ -63,7 +63,7 @@ src/
 🧩 Reusable Components – Clean, modular component structure
 
 ## 📸 Screenshots
-   ![alt text](image.png)
+   ![alt text](image-1.png)
 
 ## 🙌 Acknowledgments
     TMDB API
