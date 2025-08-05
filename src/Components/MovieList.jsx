@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
+import MovieCard from "./MovieCard";
 
-const MovieList = () => {
+const MovieList = ( {searchQuery}) => {
 
     const [movies, setMovies] = useState([])
 
 
     //setting up the api
-    const url = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1";
-    
+    const url = import.meta.env.VITE_TMDB_MOVIE_URL;
+
 
     useEffect( () =>{
     /**
@@ -46,19 +47,23 @@ const MovieList = () => {
         fetchMovies();
     },[]);
     
-
+    const filterMovies = movies.filter(movie => 
+        movie.title.toLowerCase().includes(searchQuery.toLowerCase())
+    );
 
     return (
-        <div>
-            <h1 >Popular Movies</h1>
-            <ul className="grid grid-cols-4">
-
-                {movies.map((movie) => (
-                    <li key={movie.id}>
-                        <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}  alt={movie.title}/>
-                        <span>{movie.vote_average}</span>
-                        <strong>{movie.title}</strong> - {movie.release_date}
-                    </li>
+        <div className="bg-gray-900 text-white max-w-10xl mx-auto px-6 py-8">
+            <h1 className="font-bold  text-4xl mb-6" >Popular Movies</h1>
+            <ul className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
+        
+                {filterMovies.map((movie) => (
+                    <MovieCard 
+                    key={movie.id}
+                    title={movie.title}
+                    posterPath={movie.poster_path}
+                    vote={movie.vote_average}
+                    release={movie.release_date}
+                    />
                 ))}
             </ul>
         </div>

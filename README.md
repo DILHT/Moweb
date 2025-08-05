@@ -1,12 +1,94 @@
-# React + Vite
+# 🎬 Moweb – Movie Explorer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Moweb is a sleek, responsive React web application that allows users to browse popular movies fetched from **The Movie Database (TMDB)**. Built with modern technologies like **Vite**, **Tailwind CSS**, **React Router**, and **TMDB API integration**, the app features:
 
-Currently, two official plugins are available:
+- 🎥 Movie cards with posters, ratings, and release dates  
+- 🔍 Search functionality  
+- 📱 Mobile-responsive design with a sliding mobile menu  
+- 🎞️ Dynamic hero section with movie posters  
+- ✨ Neon-themed dark UI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ React + Vite
+- 🌬️ Tailwind CSS
+- 🔁 React Router DOM
+- 🧠 React Icons
+- 📡 TMDB API
+- 📱 Responsive Design
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/moweb-movie-app.git
+cd moweb-movie-app
+2. Install dependencies
+bash
+Copy
+Edit
+npm install
+3. Set up your TMDB API Key
+Create a .env file in the root directory and add the following:
+
+ini
+Copy
+Edit
+VITE_TMDB_MOVIE_TOKEN=your_tmdb_api_token_here
+You can get your token from: https://www.themoviedb.org/settings/api
+
+4. Run the development server
+bash
+Copy
+Edit
+npm run dev
+Open http://localhost:5173 to view the app in the browser.
+
+📁 Project Structure
+bash
+Copy
+Edit
+src/
+├── components/
+│   ├── NavigationBar.jsx
+│   ├── HeroSection.jsx
+│   ├── MovieList.jsx
+├── lib/
+│   └── menu.js
+├── App.jsx
+├── main.jsx
+🌈 Features
+🔍 Live Search – Search through popular movies instantly
+
+🎨 Stylish UI – Custom theme using Tailwind and neon-accent colors
+
+📱 Mobile-Friendly – Hamburger menu + responsive layout
+
+🎬 Hero Section – Rotating background featuring popular movies
+
+🧩 Reusable Components – Clean, modular component structure
+
+📸 Screenshots
+Coming soon...
+
+🙌 Acknowledgments
+TMDB API
+
+React Icons
+
+Tailwind CSS
+
+📜 License
+This project is licensed under the MIT License.
+
+## 🤝 Contributing
+Pull requests and stars are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## 💡 Author
+Daniel Kasambala
+Full Stack Developer | React | Tailwind | Node.js | FastAPI | Creative Coder
